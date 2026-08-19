@@ -1,13 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D&D Dice Roller</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Dice Roller</h1>
+
+      <section class="dice-container">
+        <button data-sides="4">D4</button>
+        <button data-sides="6">D6</button>
+        <button data-sides="8">D8</button>
+        <button data-sides="10">D10</button>
+        <button data-sides="12">D12</button>
+        <button data-sides="20">D20</button>
+        <button data-sides="100">D100</button>
+      </section>
+
+      <section class="result-container">
+        <h2>Roll Result</h2>
+        <p id="roll-result">--</p>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
 </html>
